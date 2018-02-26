@@ -1,0 +1,66 @@
+{
+  "name": "MasterMind",
+  "version": "0.0.1",
+  "author": "Louis-David Lacerte",
+  "description": "Mastermind is a universal tool to manage everything built with Electron and React",
+  "private": true,
+  "main": "public/main.js",
+  "homepage": "./",
+  "dependencies": {
+    "@skidding/react-codemirror": "^1.0.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "chai-roughly": "^1.0.0",
+    "codemirror": "^5.29.0",
+    "drag-drop-touch-polyfill": "https://github.com/ldlac/drag-drop-touch-polyfill-ES5-compiled.git",
+    "electron-is-dev": "^0.3.0",
+    "install": "^0.10.1",
+    "katex": "^0.9.0",
+    "lodash.assign": "^4.2.0",
+    "mocha": "^5.0.1",
+    "moment": "^2.20.1",
+    "prop-types": "^15.6.0",
+    "react": "^15.6.1",
+    "react-agenda": "^0.0.5",
+    "react-calendar": "^2.13.0",
+    "react-dom": "^15.6.1",
+    "react-highlight": "^0.10.0",
+    "react-icons": "^2.2.7",
+    "react-markdown": "^2.5.0",
+    "react-scripts": "1.0.12",
+    "react-select": "^1.2.1",
+    "react-split-pane": "^0.1.66",
+    "spectron": "^3.8.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "jtest": "mocha",
+    "eject": "react-scripts eject",
+    "electron-dev": "concurrently \"yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "electron-pack": "build --em.main=build/main.js",
+    "preelectron-pack": "yarn build"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "electron": "^1.7.5",
+    "electron-builder": "^19.26.3",
+    "wait-on": "^2.0.2"
+  },
+  "build": {
+    "appId": "com.mastermind",
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    },
+    "extraResources": [
+      "public/welcome.mdtex",
+      "public/events.json",
+      "public/schedule.json"
+    ]
+  }
+}

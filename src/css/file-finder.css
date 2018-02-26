@@ -1,0 +1,20 @@
+.FileFinder {
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  float: right;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.FileFinderSelect {
+  margin-top: 50px;
+}
+
+.Select {
+  left: 50%;
+  margin-left: -15%;
+  top: 50%;
+  width: 30%;
+}

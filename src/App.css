@@ -1,0 +1,50 @@
+@import '~react-agenda/build/styles.css';
+@import '~react-datetime/css/react-datetime.css';
+
+html,body {
+  background-color: #222;
+  color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  /*text-align: center;*/
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.calendar {
+  background-color: white;
+  bottom: 0;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.CodeMirror {
+  height: 100%;
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.ReactCodeMirror {
+  height: 100%;
+}
+
+.Content {
+  height: calc(100% - 30px);
+  padding-top: 30px;
+}
+
+.result {
+  padding-left: 20px;
+}
+
+.result a {
+  color: #3890e0;
+}
